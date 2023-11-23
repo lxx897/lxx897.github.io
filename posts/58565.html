@@ -18,23 +18,36 @@
   <meta name="author" content="lxx">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="友链">
-<meta property="og:url" content="https://xhxr.xyz/links/index.html">
+    <meta name="description" content="利用hutool工具类">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Convert转换时间所避的坑">
+<meta property="og:url" content="https://xhxr.xyz/posts/58565.html">
 <meta property="og:site_name" content="Lu">
+<meta property="og:description" content="利用hutool工具类">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://lu-myblog.oss-cn-hangzhou.aliyuncs.com/blog/zh.png">
+<meta property="article:published_time" content="2023-11-09T08:21:06.000Z">
+<meta property="article:modified_time" content="2023-11-22T06:22:09.753Z">
 <meta property="article:author" content="lxx">
+<meta property="article:tag" content="时间工具类">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://lu-myblog.oss-cn-hangzhou.aliyuncs.com/blog/zh.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>友链 - Lu</title>
+  <title>Convert转换时间所避的坑 - Lu</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
 
 
@@ -113,7 +126,7 @@
   <header>
     
 
-<div class="header-inner" style="height: 60vh;">
+<div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -263,9 +276,57 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="友情链接"></span>
+            <span id="subtitle" data-typed-text="Convert转换时间所避的坑"></span>
           
         </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-11-09 16:21" pubdate>
+          2023年11月9日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          562 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          5 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
 
         
       </div>
@@ -281,76 +342,214 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
+      
 
-<div class="row links">
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar category-bar" style="margin-right: -1rem">
+    
+
+
+
+
+
+<div class="category-list">
+  
   
     
-    <div class="card col-lg-4 col-md-6 col-sm-12">
-      <a href="https://hexo.fluid-dev.com/" class="card-body hover-with-bg" target="_blank" rel="noopener">
-        <div class="card-content">
-          
-            <div class="link-avatar my-auto">
-              <img src="/img/favicon.png" alt="Fluid Blog"
-                   onerror="this.onerror=null; this.src=this.srcset='https://lu-myblog.oss-cn-hangzhou.aliyuncs.com/blog/202311182009175.jpg'"/>
-            </div>
-          
-          <div class="link-text">
-            <div class="link-title">Fluid Blog</div>
-            <div class="link-intro">主题博客</div>
-          </div>
-        </div>
-      </a>
-    </div>
-  
     
-    <div class="card col-lg-4 col-md-6 col-sm-12">
-      <a href="https://hexo.fluid-dev.com/docs/" class="card-body hover-with-bg" target="_blank" rel="noopener">
-        <div class="card-content">
-          
-            <div class="link-avatar my-auto">
-              <img src="/img/favicon.png" alt="Fluid Docs"
-                   onerror="this.onerror=null; this.src=this.srcset='https://lu-myblog.oss-cn-hangzhou.aliyuncs.com/blog/202311182009175.jpg'"/>
-            </div>
-          
-          <div class="link-text">
-            <div class="link-title">Fluid Docs</div>
-            <div class="link-intro">主题使用指南</div>
-          </div>
-        </div>
-      </a>
-    </div>
-  
     
-    <div class="card col-lg-4 col-md-6 col-sm-12">
-      <a href="https://github.com/fluid-dev/hexo-theme-fluid" class="card-body hover-with-bg" target="_blank" rel="noopener">
-        <div class="card-content">
-          
-            <div class="link-avatar my-auto">
-              <img src="/img/favicon.png" alt="Fluid Repo"
-                   onerror="this.onerror=null; this.src=this.srcset='https://lu-myblog.oss-cn-hangzhou.aliyuncs.com/blog/202311182009175.jpg'"/>
-            </div>
-          
-          <div class="link-text">
-            <div class="link-title">Fluid Repo</div>
-            <div class="link-intro">主题 GitHub 仓库</div>
-          </div>
-        </div>
+    <div class="category row nomargin-x">
+      <a class="category-item 
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="Java"
+        id="heading-d52387880e1ea22817a72d3759213819" role="tab" data-toggle="collapse" href="#collapse-d52387880e1ea22817a72d3759213819"
+        aria-expanded="true"
+      >
+        Java
+        <span class="list-group-count">(3)</span>
+        <i class="iconfont icon-arrowright"></i>
       </a>
+      
+      <div class="category-collapse collapse show" id="collapse-d52387880e1ea22817a72d3759213819"
+           role="tabpanel" aria-labelledby="heading-d52387880e1ea22817a72d3759213819">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/posts/58565.html" title="Convert转换时间所避的坑"
+           class="list-group-item list-group-item-action
+           active">
+          <span class="category-post">Convert转换时间所避的坑</span>
+        </a>
+      
+    
+      
+      
+        <a href="/posts/21635.html" title="定时任务"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">定时任务</span>
+        </a>
+      
+    
+      
+      
+        <a href="/posts/38362.html" title="递归"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">递归</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
     </div>
   
 </div>
 
 
+  </aside>
 
 
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">Convert转换时间所避的坑</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h5 id="hutool工具类依赖"><a href="#hutool工具类依赖" class="headerlink" title="hutool工具类依赖"></a>hutool工具类依赖</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">&lt;dependency&gt;<br>           &lt;groupId&gt;cn.hutool&lt;/groupId&gt;<br>           &lt;artifactId&gt;hutool-all&lt;/artifactId&gt;<br>           &lt;version&gt;5.5.2&lt;/version&gt;<br>       &lt;/dependency&gt;<br></code></pre></td></tr></table></figure>
+
+
+
+<h5 id="由图可见hutool工具类自带时间转换器时-需要转换的对象小于转换格式时就会为空"><a href="#由图可见hutool工具类自带时间转换器时-需要转换的对象小于转换格式时就会为空" class="headerlink" title="由图可见hutool工具类自带时间转换器时 需要转换的对象小于转换格式时就会为空"></a>由图可见hutool工具类自带时间转换器时 需要转换的对象小于转换格式时就会为空</h5><p><img src="https://lu-myblog.oss-cn-hangzhou.aliyuncs.com/blog/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231110145406.png" srcset="https://lu-myblog.oss-cn-hangzhou.aliyuncs.com/blog/202311201535395.gif" lazyload></p>
+<p><img src="https://lu-myblog.oss-cn-hangzhou.aliyuncs.com/blog/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231110145414.png" srcset="https://lu-myblog.oss-cn-hangzhou.aliyuncs.com/blog/202311201535395.gif" lazyload></p>
+<h5 id="正确实例如下"><a href="#正确实例如下" class="headerlink" title="正确实例如下"></a>正确实例如下</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash">String <span class="hljs-built_in">test</span>=<span class="hljs-string">&quot;2013-10-10 15:35:45&quot;</span>;<br>        LocalDateTime dateTime = Convert.toLocalDateTime(<span class="hljs-built_in">test</span>);<br>        System.out.println(dateTime);//2013-10-10T15:35:45<br>        String format1 = DateUtil.format(dateTime, <span class="hljs-string">&quot;HH:mm&quot;</span>);<br>        System.out.println(format1);//15:35<br>        String format2 = DateUtil.format(dateTime, <span class="hljs-string">&quot;yyyy-MM&quot;</span>);<br>        System.out.println(format2);//2013-10<br></code></pre></td></tr></table></figure>
+
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Java/" class="category-chain-item">Java</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E6%97%B6%E9%97%B4%E5%B7%A5%E5%85%B7%E7%B1%BB/" class="print-no-link">#时间工具类</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Convert转换时间所避的坑</div>
+      <div>https://xhxr.xyz/posts/58565.html</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>lxx</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年11月9日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/posts/16888.html" title="测试视频">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">测试视频</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/posts/21635.html" title="定时任务">
+                        <span class="hidden-mobile">定时任务</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
   
   
     <article id="comments">
@@ -382,12 +581,59 @@
   
 
 
-
-              </div>
-            </div>
-          </div>
+          </article>
         </div>
       </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
     
 
     
@@ -568,10 +814,105 @@ setInterval("createtime()", 250);
 
   
     
+      <script  src="/js/img-lazyload.js" ></script>
+    
   
 
 
 
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
 
   <script defer src="/js/leancloud.js" ></script>
 
