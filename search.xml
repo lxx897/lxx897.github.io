@@ -20,9 +20,7 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
-            <tag> MYSQL </tag>
+            <tag> Java,MYSQL </tag>
             
         </tags>
       
@@ -47,9 +45,7 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
-            <tag> 工具 </tag>
+            <tag> Java,工具 </tag>
             
         </tags>
       
@@ -149,9 +145,9 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 递归 </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
