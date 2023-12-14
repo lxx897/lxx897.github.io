@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>时间工具类</title>
+      <link href="/posts/64329.html"/>
+      <url>/posts/64329.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="传入时间是否在某两个区间内"><a href="#传入时间是否在某两个区间内" class="headerlink" title="传入时间是否在某两个区间内"></a>传入时间是否在某两个区间内</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 传入时间是否在某两个区间内</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> time  传入的时间</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> smallTime 较小的时间</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> bigTime 较大的时间</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">boolean</span> <span class="title function_">isInterval</span><span class="params">(String time,String smallTime,String bigTime)</span> &#123;</span><br><span class="line">        <span class="type">Date</span> <span class="variable">cTime</span> <span class="operator">=</span> Convert.toDate(time);</span><br><span class="line">  <span class="keyword">return</span> cTime.after(Convert.toDate(smallTime)) &amp;&amp; cTime.before(Convert.toDate(bigTime));</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><p><img src="https://lu-myblog.oss-cn-hangzhou.aliyuncs.com/blog/202312141752842.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 时间 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java,工具 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SQL中的时间函数</title>
       <link href="/posts/9968.html"/>
       <url>/posts/9968.html</url>
@@ -199,9 +224,9 @@
       
         <tags>
             
-            <tag> 配置 </tag>
-            
             <tag> 阿里云 </tag>
+            
+            <tag> 配置 </tag>
             
         </tags>
       
@@ -253,9 +278,9 @@
       
         <tags>
             
-            <tag> 配置 </tag>
-            
             <tag> 阿里云 </tag>
+            
+            <tag> 配置 </tag>
             
         </tags>
       
