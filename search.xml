@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Docker总结</title>
+      <link href="/posts/57395.html"/>
+      <url>/posts/57395.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="配置虚拟机固定ip"><a href="#配置虚拟机固定ip" class="headerlink" title="配置虚拟机固定ip"></a>配置虚拟机固定ip</h2><p>vi &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F;ifcfg-ens33</p><h3 id="添加配置"><a href="#添加配置" class="headerlink" title="添加配置"></a>添加配置</h3><p>IPADDR&#x3D;”192.168.200.128”&#x2F;&#x2F;IP<br>NETMASK&#x3D;”255.255.255.0”&#x2F;&#x2F;子网掩码<br>GATEWAY&#x3D;”192.168.200.2”&#x2F;&#x2F;网关</p><h2 id="开启mysql的权限"><a href="#开启mysql的权限" class="headerlink" title="开启mysql的权限"></a>开启mysql的权限</h2><p>grant all on <em>.</em> to root@’%’ identified by ‘Lxx@123’ with grant option;<br>刷新权限flush privileges;</p><h2 id="查询是否自启动"><a href="#查询是否自启动" class="headerlink" title="查询是否自启动"></a>查询是否自启动</h2><p>systemctl list-unit-files | grep docker</p><h2 id="设置自启动"><a href="#设置自启动" class="headerlink" title="设置自启动"></a>设置自启动</h2><p>systemctl enable docker.service</p><h2 id="设置容器自启动"><a href="#设置容器自启动" class="headerlink" title="设置容器自启动"></a>设置容器自启动</h2><p>docker update –restart&#x3D;always 容器名称</p><h2 id="在配置mysql3306端口时没效果时执行如下"><a href="#在配置mysql3306端口时没效果时执行如下" class="headerlink" title="在配置mysql3306端口时没效果时执行如下"></a>在配置mysql3306端口时没效果时执行如下</h2><p>docker run –name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD&#x3D;Lxx@123 -d mysql:latest</p><h2 id="在配置redis6379端口时没效果时执行如下"><a href="#在配置redis6379端口时没效果时执行如下" class="headerlink" title="在配置redis6379端口时没效果时执行如下"></a>在配置redis6379端口时没效果时执行如下</h2><p>docker run  -p 6379:6379 –name myredis -v &#x2F;home&#x2F;redis&#x2F;redis.conf:&#x2F;etc&#x2F;redis&#x2F;redis.conf -v &#x2F;home&#x2F;redis&#x2F;data:&#x2F;data -d redis redis-server &#x2F;etc&#x2F;redis&#x2F;redis.conf    –requirepass “Lxx@123”</p><h2 id="若shell连接虚拟机失败"><a href="#若shell连接虚拟机失败" class="headerlink" title="若shell连接虚拟机失败"></a>若shell连接虚拟机失败</h2><p>vi sshd_config<br>修改#usDNS&#x3D;YES  为usDNS&#x3D;no<br>再执行<br>systemctl restart sshd.service</p><p>进入docker容器中<br>docker exec -it mysql &#x2F;bin&#x2F;bash</p><h2 id="若是电脑断电打不开可执行"><a href="#若是电脑断电打不开可执行" class="headerlink" title="若是电脑断电打不开可执行"></a>若是电脑断电打不开可执行</h2><p>xfs_repair -v -L &#x2F;dev&#x2F;dm-0</p><h2 id="查看镜像目录"><a href="#查看镜像目录" class="headerlink" title="&#x2F;&#x2F;查看镜像目录"></a>&#x2F;&#x2F;查看镜像目录</h2><p>docker ps</p><h2 id="查看文件"><a href="#查看文件" class="headerlink" title="&#x2F;&#x2F;查看文件"></a>&#x2F;&#x2F;查看文件</h2><p>docker images</p><h2 id="停止镜像"><a href="#停止镜像" class="headerlink" title="&#x2F;&#x2F;停止镜像"></a>&#x2F;&#x2F;停止镜像</h2><p>rm stop xxx</p><h2 id="删除镜像"><a href="#删除镜像" class="headerlink" title="&#x2F;&#x2F;删除镜像"></a>&#x2F;&#x2F;删除镜像</h2><p>rmi -f xxx</p><h2 id="创建文件"><a href="#创建文件" class="headerlink" title="&#x2F;&#x2F;创建文件"></a>&#x2F;&#x2F;创建文件</h2><p>mkdir xxx(目录)</p><h2 id="删除文件"><a href="#删除文件" class="headerlink" title="&#x2F;&#x2F;删除文件"></a>&#x2F;&#x2F;删除文件</h2><p>rm -f xxx(文件)</p><h2 id="删除文件夹"><a href="#删除文件夹" class="headerlink" title="&#x2F;&#x2F;删除文件夹"></a>&#x2F;&#x2F;删除文件夹</h2><p>rm -rf xxx(文件夹)</p><h2 id="前端发包流程"><a href="#前端发包流程" class="headerlink" title="前端发包流程"></a>前端发包流程</h2><p>1.上传压缩包到指定目录<br>2.unzip xxx(压缩包)<br>3.rm -f xxx(压缩包)</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Docker </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java Docker </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Java实现导出以及导入(多Sheet页)</title>
       <link href="/posts/62580.html"/>
       <url>/posts/62580.html</url>
