@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Stream流常用方法</title>
+      <link href="/posts/54999.html"/>
+      <url>/posts/54999.html</url>
+      
+        <content type="html"><![CDATA[<ul><li><h2 id="Stream流对集合类型的转换"><a href="#Stream流对集合类型的转换" class="headerlink" title="Stream流对集合类型的转换"></a>Stream流对集合类型的转换</h2></li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Integer Long 类型之间都可相互转换</span></span><br><span class="line">List&lt;String&gt; stringList = Arrays.asList(<span class="string">&quot;1&quot;</span>, <span class="string">&quot;2&quot;</span>, <span class="string">&quot;3&quot;</span>, <span class="string">&quot;4&quot;</span>, <span class="string">&quot;5&quot;</span>);</span><br><span class="line">List&lt;Integer&gt; collect = stringList.stream().map(Integer::parseInt).collect(Collectors.toList());</span><br><span class="line">List&lt;Long&gt; longList = Arrays.asList(<span class="number">1L</span>,<span class="number">2L</span>,<span class="number">3L</span>,<span class="number">4L</span>,<span class="number">5L</span>);</span><br><span class="line">List&lt;String&gt; strList = longList.stream().map(String::valueOf).collect(Collectors.toList());</span><br></pre></td></tr></table></figure><ul><li><h2 id="Stream流的IF-ELSE的用法"><a href="#Stream流的IF-ELSE的用法" class="headerlink" title="Stream流的IF ELSE的用法"></a>Stream流的IF ELSE的用法</h2></li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">  List&lt;User&gt; userList = Arrays.asList(</span><br><span class="line">                <span class="keyword">new</span> <span class="title class_">User</span>(<span class="string">&quot;张三&quot;</span>, <span class="number">30</span>),</span><br><span class="line">                <span class="keyword">new</span> <span class="title class_">User</span>(<span class="string">&quot;李四&quot;</span>, <span class="number">20</span>),</span><br><span class="line">                <span class="keyword">new</span> <span class="title class_">User</span>(<span class="string">&quot;Enoch&quot;</span>, <span class="number">40</span>)</span><br><span class="line">        );</span><br><span class="line"><span class="comment">//实例1</span></span><br><span class="line"> <span class="type">User</span> <span class="variable">result1</span> <span class="operator">=</span> userList.stream()</span><br><span class="line">                .filter((p) -&gt; <span class="string">&quot;李四&quot;</span>.equals(p.getName()) &amp;&amp; <span class="number">20</span> == p.getAge())</span><br><span class="line">                .findAny() <span class="comment">//如果找到就返回</span></span><br><span class="line">                .orElse(<span class="literal">null</span>); <span class="comment">//如果找不到就返回null</span></span><br><span class="line">System.out.println(<span class="string">&quot;result 1 :&quot;</span> + result1); <span class="comment">//User(name=李四, age=20)</span></span><br><span class="line"><span class="comment">//实例2</span></span><br><span class="line"> <span class="type">User</span> <span class="variable">result2</span> <span class="operator">=</span> userList.stream()</span><br><span class="line">                .filter(p -&gt; <span class="string">&quot;Enoch&quot;</span>.equals(p.getName()) &amp;&amp; <span class="number">20</span> == p.getAge()).findAny()</span><br><span class="line">                .orElse(<span class="literal">null</span>);</span><br><span class="line">System.out.println(<span class="string">&quot;result 2 :&quot;</span> + result2); <span class="comment">//null</span></span><br></pre></td></tr></table></figure><ul><li><h2 id="Stream流的limit和skip"><a href="#Stream流的limit和skip" class="headerlink" title="Stream流的limit和skip"></a>Stream流的limit和skip</h2></li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">List&lt;Integer&gt; integerList = Arrays.asList(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>);</span><br><span class="line">List&lt;Integer&gt; limitList =</span><br><span class="line">    integerList.stream().limit(<span class="number">2</span>).collect(Collectors.toList()); <span class="comment">//[1, 2]</span></span><br><span class="line">List&lt;Integer&gt; skipList =</span><br><span class="line">    integerList.stream().skip(<span class="number">3</span>).collect(Collectors.toList()); <span class="comment">//[4, 5]</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Stream </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java Stream </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>账号信息</title>
       <link href="/posts/59743.html"/>
       <url>/posts/59743.html</url>
@@ -499,9 +524,9 @@
       
         <tags>
             
-            <tag> 阿里云 </tag>
-            
             <tag> 配置 </tag>
+            
+            <tag> 阿里云 </tag>
             
         </tags>
       
@@ -553,9 +578,9 @@
       
         <tags>
             
-            <tag> 阿里云 </tag>
-            
             <tag> 配置 </tag>
+            
+            <tag> 阿里云 </tag>
             
         </tags>
       
