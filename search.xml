@@ -4,6 +4,81 @@
   
     
     <entry>
+      <title>Stream总结</title>
+      <link href="/posts/12933.html"/>
+      <url>/posts/12933.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java Stream </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>List总结</title>
+      <link href="/posts/6594.html"/>
+      <url>/posts/6594.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-对集合数据的操作"><a href="#1-对集合数据的操作" class="headerlink" title="1.对集合数据的操作"></a>1.对集合数据的操作</h3><ul><li><h5 id="对同一个集合中的数据需要放入两个不同数据时-可以使用list-addAll"><a href="#对同一个集合中的数据需要放入两个不同数据时-可以使用list-addAll" class="headerlink" title="对同一个集合中的数据需要放入两个不同数据时 可以使用list.addAll"></a>对同一个集合中的数据需要放入两个不同数据时 可以使用list.addAll</h5></li></ul><p><img src="https://lu-myblog.oss-cn-hangzhou.aliyuncs.com/blog/202404101705355.png"></p><ul><li><h5 id="对同一个集合中的数据需要移除指定集合时-可以使用list-removeAll"><a href="#对同一个集合中的数据需要移除指定集合时-可以使用list-removeAll" class="headerlink" title="对同一个集合中的数据需要移除指定集合时 可以使用list.removeAll"></a>对同一个集合中的数据需要移除指定集合时 可以使用list.removeAll</h5></li></ul><p><img src="https://lu-myblog.oss-cn-hangzhou.aliyuncs.com/blog/202404101705944.png"></p><ul><li><h5 id="对单个元素进行删除时可以使用"><a href="#对单个元素进行删除时可以使用" class="headerlink" title="对单个元素进行删除时可以使用"></a>对单个元素进行删除时可以使用</h5><p>1.removeIf</p><p><img src="https://lu-myblog.oss-cn-hangzhou.aliyuncs.com/blog/202404101729484.png"></p><p>2.remove</p><p><img src="https://lu-myblog.oss-cn-hangzhou.aliyuncs.com/blog/202404101729074.png"></p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java List </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>近期工作心得</title>
+      <link href="/posts/20933.html"/>
+      <url>/posts/20933.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-在业务层写SQL查询时-联表查询不建议超过三张"><a href="#1-在业务层写SQL查询时-联表查询不建议超过三张" class="headerlink" title="1.在业务层写SQL查询时 联表查询不建议超过三张"></a>1.在业务层写SQL查询时 联表查询不建议超过三张</h3><h5 id="解决方案-以三张表为例"><a href="#解决方案-以三张表为例" class="headerlink" title="解决方案(以三张表为例)"></a>解决方案(以三张表为例)</h5><ul><li>对每张业务表进行单表查询同时附带当前表所需要的条件</li><li>查询完成以后可以对需要替换的数据进行匹配后进行循环赋值</li></ul><h3 id="2-在业务层的SQL中不能做SQL查询以及新增操作"><a href="#2-在业务层的SQL中不能做SQL查询以及新增操作" class="headerlink" title="2.在业务层的SQL中不能做SQL查询以及新增操作"></a>2.在业务层的SQL中不能做SQL查询以及新增操作</h3><h5 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h5><ul><li>需要做查询时 可以在外层进行单表查询 在循环中进行匹配赋值</li><li>需要做新增操作时 可以在外部创建对象数组 同时在内部new一个新的对象进行每次循环的赋值</li><li>最后在循环结束以后再去写批量插入的操作 避免接口反应时间较慢</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java 分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SQL中实用函数</title>
       <link href="/posts/23407.html"/>
       <url>/posts/23407.html</url>
@@ -562,9 +637,9 @@
       
         <tags>
             
-            <tag> 配置 </tag>
-            
             <tag> 阿里云 </tag>
+            
+            <tag> 配置 </tag>
             
         </tags>
       
@@ -616,9 +691,9 @@
       
         <tags>
             
-            <tag> 配置 </tag>
-            
             <tag> 阿里云 </tag>
+            
+            <tag> 配置 </tag>
             
         </tags>
       
